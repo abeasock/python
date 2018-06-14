@@ -63,7 +63,7 @@ def shp2json(in_path, out_path):
 
 
 # Iterate through directory and apply the shp2json function to all subdirectories. All folders must first be unzipped.
-dir_name = "<update with path>"
+dir_name = <update with path>
 
 for dirs, subdir, files in os.walk(dir_name):
   for sd in subdir:
