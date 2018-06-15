@@ -36,7 +36,7 @@ import requests
 import json
 import datetime
 
-api_key = '867683adec7c448e9d6171946171107'
+api_key = <your api key>
 
 # Create a pandas DataFrame with latitudes, longitudes
 locations = [('2/14/2014 12:31', 39.633556, -86.813806),
