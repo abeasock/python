@@ -9,7 +9,6 @@
 #                             Script Information
 #-----------------------------------------------------------------------------
 # Script                 : shp2json.py
-# Bitbucket Repo         :
 # Brief Description      : This script will convert all shapefiles to geojson
 #                          in the provided directory.
 # Data used              : 
