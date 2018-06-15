@@ -8,7 +8,7 @@
 #-----------------------------------------------------------------------------
 #                             Script Information
 #-----------------------------------------------------------------------------
-# Script                 : weatherunderground.py
+# Script                 : weatherunderground_api.py
 # Brief Description      : This script will use Weather Underground's API to 
 #                          do a geolookup and gather weather elements for a 
 #                          given latitude/longitude at a particular date and 
