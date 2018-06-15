@@ -9,7 +9,6 @@
 #                             Script Information
 #-----------------------------------------------------------------------------
 # Script                 : openstreetmaps.py
-# Bitbucket Repo         :
 # Brief Description      : This script is intended to collect road information
 #                          from OpenStreetMaps for a given DataFrame with
 #                          latitude/longitude for each record.
