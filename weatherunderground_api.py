@@ -62,8 +62,8 @@ def get_historical_weather(df):
         timestamp  = row['timestamp']
         latitude   = row['latitude']
         longitude  = row['longitude']
-        date       = datetime.datetime.strptime(timestamp, '%m/%d/%Y %H:%M').strftime("%Y%m%d")
-        hour       = datetime.datetime.strptime(timestamp, '%m/%d/%Y %H:%M').strftime("%H")
+        date       = datetime.datetime.strptime(str(timestamp), '%Y-%m-%d %H:%M:%S').strftime("%Y-%m-%d")
+        hour       = datetime.datetime.strptime(str(timestamp), '%Y-%m-%d %H:%M:%S').strftime("%H")
         
         weather_url = 'http://api.wunderground.com/api/' + api_key + '/geolookup/history_' + str(date) + '/q/' + str(latitude) + ',' + str(longitude) + '.json'   
         weather_req = requests.get(weather_url)   
