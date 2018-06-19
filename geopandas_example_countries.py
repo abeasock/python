@@ -6,6 +6,18 @@
 # Creation Date          : 19JUN2018
 #-----------------------------------------------------------------------------
 #-----------------------------------------------------------------------------
+#                             Script Information
+#-----------------------------------------------------------------------------
+# Script                 : geopandas_example_countries.py
+# Bitbucket Repo         :
+# Brief Description      : A very basic example of how to use geopandas to 
+#                          join data by point within polygon.
+# Data used              : countries.json file is avialable in my repo:
+#                          github.com/abeasock/datasets
+# Output Files           : capitals_countries_joined.txt
+#
+# Notes / Assumptions    : 
+#-----------------------------------------------------------------------------
 #                            Environment Information
 #-----------------------------------------------------------------------------
 # Python Version         : 3.6.2
