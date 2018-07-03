@@ -91,4 +91,4 @@ derby.drop('note', axis=1, inplace=True)
 # replace 1 ½ as 1.5 & 1 ¼ as 1.25
 derby['distance_miles'] = derby['distance_miles'].replace(u'1 \xbc', u'1.25').replace(u'1 \xbd', u'1.5')
 
-derby.to_csv('kentucky_derby_winners.txt', sep='|')
+derby.to_csv('kentucky_derby_winners.txt', sep='|', index=False)
