@@ -2,9 +2,9 @@
 # Author            : Amber Zaratsian
 # Creation Date     : 17AUG2018
 # Description       : Function that takes a PySpark DataFrame and a list of
-#					 categorical colmnns and returns the DataFrame with 
-#					  additional dummy encoded columns for the categorical
-#					  variables. Like the pandas.get_dummies() in Python.
+#                     categorical colmnns and returns the DataFrame with 
+#                     additional dummy encoded columns for the categorical
+#                     variables. Like the pandas.get_dummies() in Python.
 # Python Version    : 3.5.4
 # Anaconda Version  : 5.0.1
 # Spark Version		: 2.1.0
