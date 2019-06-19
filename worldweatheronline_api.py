@@ -14,7 +14,6 @@
 #                          longitude at a particular date and hour.
 # Data used              : 
 # Output Files           : locations_weather_joined.csv
-#
 # Notes / Assumptions    : API Documentation: https://developer.worldweatheronline.com/api/
 #-----------------------------------------------------------------------------
 #                            Environment Information
@@ -23,11 +22,6 @@
 # Anaconda Version       : 5.0.1
 # Spark Version          : n/a
 # Operating System       : Windows 10
-#-----------------------------------------------------------------------------
-#                           Change Control Information
-#-----------------------------------------------------------------------------
-# Programmer Name/Date   : Change and Reason
-#
 ##############################################################################
 
 
@@ -35,8 +29,9 @@ import pandas as pd
 import requests
 import json
 import datetime
+import time
 
-api_key = <your api key>
+api_key = '867683adec7c448e9d6171946171107'
 
 # Create a pandas DataFrame with latitudes, longitudes
 locations = [('2/14/2014 12:31', 39.633556, -86.813806),
@@ -52,6 +47,7 @@ df = pd.DataFrame(locations, columns=labels)
 df['timestamp'] = df['date'].map(lambda x: datetime.datetime.strptime(x,'%m/%d/%Y %H:%M'))
 df.drop('date', axis=1, inplace=True)
 
+startTime = time.time()
 
 def get_historical_weather(df):
     
@@ -114,5 +110,10 @@ def get_historical_weather(df):
     return df_out
 
 df2 = get_historical_weather(df)
+
+endTime = time.time()
+
+elapsedTime = endTime - startTime
+print(elapsedTime)
 
 df2.to_csv('locations_weather_joined.csv', index=False)
