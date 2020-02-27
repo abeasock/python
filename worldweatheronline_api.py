@@ -31,7 +31,7 @@ import json
 import datetime
 import time
 
-api_key = '867683adec7c448e9d6171946171107'
+api_key = '<api_key_goes_here>'
 
 # Create a pandas DataFrame with latitudes, longitudes
 locations = [('2/14/2014 12:31', 39.633556, -86.813806),
